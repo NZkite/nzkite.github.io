@@ -35,6 +35,23 @@
         <link rel="stylesheet" href="style/carousel.css">
         <link rel="stylesheet" href="style/pages/product.css">
 
+        <script>
+            function myFunction() {
+              var copyText = document.getElementById("textToCopy").innerText;
+              navigator.clipboard.writeText(copyText);
+              
+              var tooltip = document.getElementById("myTooltip");
+              tooltip.innerHTML = "Copied: " + copyText;
+            }
+            
+            function outFunc() {
+              var tooltip = document.getElementById("myTooltip");
+              tooltip.innerHTML = "Copy to clipboard";
+            }
+            </script>
+
+
+
     </head>
 
     <body>
@@ -80,59 +97,71 @@
 
 
                 <!-- Demo Card Container -->
-                <h1>WHO ARE WE?</h1>
-                <div class="flex bg-grey">
-                    <a class="card">
-                        <h2>WOLFE MOTORSPORT LTD</h2>
-                        At Wolfe Motorsport, we are passionate about performance and precision. Based in the heart of New Zealand, we specialize in designing and manufacturing high-quality fuel rails for motorsport enthusiasts and professionals. With a commitment to excellence, our fuel rails are engineered to provide reliable fuel delivery, helping to maximize your engine's performance under the most demanding conditions.
-                    </a>
-                         <!-- Carousel -->
                 
-                         <div class="prod-car car-card" style="grid-column-end: span 2;">
-                            <div class="carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
-                                <div class="carousel-cell">
-                                    <div style="background-image: url(assets/coffee.jpeg);">
-                                    </div>
+                <div class="flex bg-grey">
+                    
+                    <!-- Carousel -->
+                
+                    <div class="prod-car car-card" style="grid-column-end: span 2;">
+                        <div class="carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+                            <div class="carousel-cell">
+                                <div style="background-image: url(assets/coffee.jpeg);">
                                 </div>
-                                <div class="carousel-cell">
-                                    <div style="background-image: url(assets/venue.jpeg);">
-                                    </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div style="background-image: url(assets/venue.jpeg);">
                                 </div>
-                                <div class="carousel-cell">
-                                    <div style="background-image: url(assets/coffee.jpeg);">
-                                    </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div style="background-image: url(assets/coffee.jpeg);">
                                 </div>
                             </div>
                         </div>
-                        
+                    </div>
+                    
+                    <a class="card">
+                        <h2>WOLFE MOTORSPORT LTD</h2>
+                        <p>
+                        At Wolfe Motorsport, we are passionate about performance and precision. Based in the heart of New Zealand, we specialize in designing and manufacturing high-quality fuel rails for motorsport enthusiasts and professionals. With a commitment to excellence, our fuel rails are engineered to provide reliable fuel delivery, helping to maximize your engine's performance under the most demanding conditions.
+                    </p>
+                    </a>
+
                     
                     <a class="card">
                         <h2>FUTURE PROJECTS</h2>
+                        <p>
                         In addition to our fuel rails, we plan offer a comprehensive injector service that flow tests injectors throughout their duty cycle, meaning you will know how much your injectors are flowing through out the whole rev range. Our state-of-the-art equipment ensures that each injector is optimised for perfect fuel atomisation, helping to achieve better engine efficiency and power. Whether you’re looking to upgrade your race car or build a high-performance street car.
+                    </p>
                     </a>
                 
-                    <div class="grid">
+                    
+
+
+                    <div class="flex-grid">
 
                         <a class="card">
                             <h2>STAYING IN TOUCH</h2>
-                            <p>The best way to keep up with what we are doing is by following us on our social media.</p>
-                            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
-                                <!-- First image and text -->
+                            <p>Keep up with what we are doing by following us on social media.</p>
+                            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+                                <!-- Instagram Link -->
                                 <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
                                     <img class="social-image" src="assets/instagram_black.svg" alt="instagram">
                                     <span style="margin-left: 10px; max-width: 250px;">Follow us on Instagram</span>
                                 </div>
                             
-                                <!-- Second image and text -->
+                                <!-- Youtube Link -->
                                 <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
                                     <img class="social-image" src="assets/youtube_black.svg" alt="youtube">
                                     <span style="margin-left: 10px; max-width: 250px;">Subscribe to our YouTube channel</span>
                                 </div>
                             
-                                <!-- Third image and text -->
-                                <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
+                                <!-- Facebook Link -->
+                                <div class="image-text-container" style="display: flex; align-items: center;">
                                     <img class="social-image" src="assets/facebook_black.svg" alt="facebook">
+                                    
                                     <span style="margin-left: 10px; max-width: 250px;">Like us on Facebook</span>
+                                    
+                                    
                                 </div>
                             </div>
 
@@ -140,17 +169,22 @@
                         <a class="card">
                             <h2>CONTACT</h2>
                             <p>For all Technical, Sales or Partnership inquiries.</p>
-                            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
-                                <!-- First image and text -->
-                                <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
-                                    <img class="social-image" src="assets/email.svg" alt="instagram">
-                                    <span style="margin-left: 10px; max-width: 250px;">admin@wolfemotorsport.co.nz</span>
-                                </div>
-                            
-                                <!-- Second image and text -->
+                            <div style="display: flex; flex-direction: column-reverse; gap: 10px; margin-top: 15px;">
+
+                                <!-- Phone number -->
                                 <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
                                     <img class="social-image" src="assets/phone.svg" alt="youtube">
                                     <span style="margin-left: 10px; max-width: 250px;">(+64) 027 374 1036</span>
+                                 </div>
+                                 <!-- Email click to copy -->
+                                <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
+                                    
+                                <div class="tooltip"style="display: flex; flex-wrap: wrap; align-items: center;" >
+                                <img src="assets/email.svg" class="social-image onclick="myFunction() onmouseout="outFunc()" alt="Copy Image" style="cursor:pointer;">
+                                <span id="textToCopy" onclick="myFunction()">admin@wolfemotorsport.co.nz</span>
+                                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                                </div>
+
                                 </div>
                             
                             </div>
@@ -163,6 +197,7 @@
             <!-- Footer -->
             <div class="footer">
                 © Wolfe Motorsport LTD 2023
+            
             </div>
         </div>
 
