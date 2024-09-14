@@ -1,0 +1,28 @@
+/* FLEX ELEMENTS */
+.flex {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+}
+
+/* GRID ELEMENTS */
+.grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 650px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

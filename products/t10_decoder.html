@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <base href="../index.html">
+
+        <!-- Site Icon and Title -->
+        <title>Wolfe Electronics</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon_wolfe.svg">
+
+        <!-- Font Includes -->
+        <link rel="preload" as="font" href="style/fonts/itc_lubalin/itc_lubalin.woff2">
+        <link rel="preload" as="font" href="style/fonts/itc_lubalin/itc_lubalin.woff">
+        <link rel="preload" as="font" href="style/fonts/arimo/arimo.woff2">
+        <link rel="preload" as="font" href="style/fonts/arimo/arimo.woff">
+
+        <link rel="stylesheet" href="style/fonts/fonts.css">
+
+        <!-- Local Stylesheets -->
+        <link rel="stylesheet" href="style/responsive.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/navigation.css">
+
+        <!-- Page Specific Stylesheets -->
+        <link rel="stylesheet" href="style/flickity.css">
+        <link rel="stylesheet" href="style/carousel.css">
+        <link rel="stylesheet" href="style/pages/product.css">
+
+        <!-- Global JavaScript -->
+        <link rel="preload" as="script" href="script/navigation.js">
+        <link rel="preload" as="script" href="script/flickity.js">
+
+        <script src="script/navigation.js"></script>
+        <script src="script/flickity.js"></script>
+            
+    </head>
+
+    <body>
+
+        <!-- Logo and Navigation -->
+        <div class="nav">
+            <div class="nav-container bg-white">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo_wolfe.svg" alt="Wolfe" height="30px">
+                    </a>
+                </div>
+                
+                <div class="btn-container">
+                    <a class="nav-btn bg-white" href="store.html">STORE</a>
+                    <a class="nav-btn bg-white" href="#">BLOG</a>
+                    <a class="nav-btn bg-white" href="#">ABOUT</a>
+                    <a class="nav-btn end-btn bg-white" href="#">CART</a>
+                </div>
+
+                <div class="ham-icon"">
+                    <a href="javascript:void(0);" onclick="hamburger()">
+                        <img src="assets/icon_ham.svg" height="30px">
+                    </a>
+                </div>
+            </div>
+
+            <div id="ham" class="ham-container">
+                <a class="ham-btn" href="store.html">STORE</a>
+                <a class="ham-btn" href="store.html">BLOG</a>
+                <a class="ham-btn" href="store.html">ABOUT</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+
+            <div class="content">
+                <h1>T10 DECODER</h1>
+
+                <!-- Product Image + Pricing -->
+                <div class="flex">
+
+                    <!-- Carousel -->
+                    <div class="prod-car car-card" style="grid-column-end: span 2;">
+                        <div class="carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+                            <div class="carousel-cell">
+                                <div style="background-image: url(assets/coffee.jpeg);">
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div style="background-image: url(assets/venue.jpeg);">
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div style="background-image: url(assets/coffee.jpeg);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prod-side flex" style="margin-top: 0;">
+                        <!-- SUMMARY INFO -->
+                        <div class="prod-info card">
+                            <h3>SUMMARY</h3>
+
+                            <ul>
+                                <li>For Märklin and TRIX C-Track turnouts.</li>
+                                <li>DCC and MM compatible.</li>
+                                <li>Fast and simple one-button programming.</li>
+                            </ul>
+                        </div>
+
+                        <!-- PURCHASING CARD -->
+                        <div class="prod-opts card">
+
+                            <!-- OPTIONS -->
+                            <h3>CONNECTOR</h3>
+                            <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+            
+                                <input type="radio" name="track" id="marklin" checked="">
+                                <label class="btn no-select" for="marklin">MÄRKLIN</label>
+                            
+                                <input type="radio" name="track" id="trix">
+                                <label class="btn no-select" for="trix">TRIX</label>
+
+                            </div>
+
+                            <!-- ADD TO CART -->
+                            <div class="flex">
+                                <div class="btn">ADD TO CART</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Description and Documentation -->
+                <div class="flex">
+
+                    <!-- Description -->
+                    <div class="prod-desc card">
+                        <h3>DESCRIPTION</h3>
+                        <p>The T10 decoder is suitable for Märklin and TRIX C-Track turnouts. The decoder is capable of operating with both DCC and MM with 2044 and 320 addresses respectively. The protocol used to program addresses is remembered and adhered to in operation. The decoder has a light output for connection of an LED turnout lantern. The two motor outputs and lantern output can each be given unique addresses. The lantern can be controlled by a separate address, static, or switch with the turnout position. The lantern switches on and off with a fading effect. The decoder remembers the turnout position and lantern state when power is lost. The decoder is programmed by a programming button accessable underneath the turnout once installed. Two programming modes give maximum flexibility of address setting without complex CV programming.</p>
+                    </div>
+
+                    <!-- Documentation -->
+                    <div class="prod-doc card">
+                        <h3>DOCUMENTATION</h3>
+
+                        <div class="prod-doc-item btn no-select flex">
+                            <p>T10 INSTRUCTIONS</p>
+                            <p>1.23 MB</p>
+                        </div>
+
+                        <div class="prod-doc-item btn no-select flex">
+                            <p>T10 MECHANICAL</p>
+                            <p>0.4 MB</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Advertising -->
+                <h1>WHY WOLFE DECODERS?</h1>
+                <div class="card" style="margin-top: 20px;">
+                    <div class="flex">
+                        <div class="card-frame prod-info" style="
+                            background-image: linear-gradient(160deg, rgb(244, 253, 255), #d8e7ff); flex-basis: 300px;
+                            ">
+                            <h3 style="text-align: center;">CONVENIENCE</h3>
+                            <div class="card-hole foreground">
+                                <p>WOLFE decoders are easy to program and easy to use - all it takes is the press of a button. This makes WOLFE decoders especially suitable for reprogrammable applications, such as reconfigurable model railways, or set-up take-down use.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-dlx-btn prod-info">
+                            <h3 style="text-align: center;">SUPPORT</h3>
+                            <p>WOLFE decoders are designed and developed locally in New Zealand. Prompt support is always available.</p>
+                        </div>
+
+                        <div class="card-btn prod-info" style="
+                            background-image: linear-gradient(180deg, rgb(255, 254, 246), #fdf4cf); flex-basis: 300px;
+                            ">
+                            <h3 style="text-align: center;">BUNNY</h3>
+                            <p>I'm bnuuy I like carrot and uhhh apples. I hop around and do bunny things!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Products -->
+                <h1>OTHER PRODUCTS</h1>
+
+
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                © Wolfe Electronics 2023
+            </div>
+
+        </div>
+
+    </body>
+</html>

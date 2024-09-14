@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <base href="../index.html">
+
+        <!-- Site Icon and Title -->
+        <title>Wolfe Electronics</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon_wolfe.svg">
+
+        <!-- Font Includes -->
+        <link rel="preload" as="font" href="style/fonts/itc_lubalin/itc_lubalin.woff2">
+        <link rel="preload" as="font" href="style/fonts/itc_lubalin/itc_lubalin.woff">
+        <link rel="preload" as="font" href="style/fonts/arimo/arimo.woff2">
+        <link rel="preload" as="font" href="style/fonts/arimo/arimo.woff">
+
+        <link rel="stylesheet" href="style/fonts/fonts.css">
+
+        <!-- Local Stylesheets -->
+        <link rel="stylesheet" href="style/responsive.css">
+        <link rel="stylesheet" href="style/navigation.css">
+        <link rel="stylesheet" href="style/style.css">
+
+        <link rel="stylesheet" href="style/flickity.css">
+        <link rel="stylesheet" href="style/carousel.css">
+
+        <!-- JavaScript -->
+        <link rel="preload" as="script" href="script/navigation.js">
+        <link rel="preload" as="script" href="script/flickity.js">
+
+        <script src="script/navigation.js"></script>
+        <script src="script/flickity.js"></script>
+            
+    </head>
+
+    <body>
+
+        <!-- Logo and Navigation -->
+        <div class="nav">
+            <div class="nav-container bg-white">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo_wolfe.svg" alt="Wolfe" height="30px">
+                    </a>
+                </div>
+                
+                <div class="btn-container">
+                    <a class="nav-btn bg-white" href="store.html">STORE</a>
+                    <a class="nav-btn bg-white" href="#">BLOG</a>
+                    <a class="nav-btn bg-white" href="#">ABOUT</a>
+                    <a class="nav-btn end-btn bg-white" href="#">CART</a>
+                </div>
+
+                <div class="ham-icon"">
+                    <a href="javascript:void(0);" onclick="hamburger()">
+                        <img src="assets/icon_ham.svg" height="30px">
+                    </a>
+                </div>
+            </div>
+
+            <div id="ham" class="ham-container">
+                <a class="ham-btn" href="store.html">STORE</a>
+                <a class="ham-btn" href="store.html">BLOG</a>
+                <a class="ham-btn" href="store.html">ABOUT</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+
+            <div class="content">
+                <h1>T15 DECODER</h1>
+
+                <!-- Product Image + Pricing -->
+                <div class="grid">
+
+                    <!-- Carousel -->
+                    <div class="car-card" style="grid-column-end: span 2;">
+                        <div class="carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+                            <div class="carousel-cell">
+                                <img src="assets/coffee.jpeg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="assets/coffee.jpeg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="assets/coffee.jpeg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>AT A GLANCE</h3>
+                        <ul>
+                            <li>For Märklin and TRIX C-Track turnouts.</li>
+                            <li>DCC and MM compatible.</li>
+                            <li>Up to 2044 addresses with DCC and 320 with MM.</li>
+                            <li>Fast and simple one-button programming.</li>
+                        </ul>
+                        <div class="flex">
+                            <div class="card-in">
+                                <h3>MARKLIN</h3>
+                            </div>
+                            <div class="card-in">
+                                <h3>TRIX</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="flex">
+                    <div class="card">
+                        <h3>DESCRIPTION</h3>
+                        <p>The T10 decoder is suitable for Märklin and TRIX C-Track turnouts. The decoder is capable of operating with both DCC and MM with 2044 and 320 addresses respectively. The protocol used to program addresses is remembered and adhered to in operation. The decoder has a light output for connection of an LED turnout lantern. The two motor outputs and lantern output can each be given unique addresses. The lantern can be controlled by a separate address, static, or switch with the turnout position. The lantern switches on and off with a fading effect. The decoder remembers the turnout position and lantern state when power is lost. The decoder is programmed by a programming button accessable underneath the turnout once installed. Two programming modes give maximum flexibility of address setting without complex CV programming.</p>
+                    </div>
+                </div>
+
+                <!-- Documentation -->
+                <div class="flex">
+                    <div class="card">
+                        <h3>DOCUMENTATION</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                © Wolfe Electronics 2023
+            </div>
+
+        </div>
+
+    </body>
+</html>
