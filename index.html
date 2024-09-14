@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,  initial-scale=1.0">
 
         <!-- Site Icon and Title -->
-        <title>Wolfe Electronics</title>
+        <title>Wolfe Motorsport</title>
         <link rel="icon" type="image/x-icon" href="assets/icon_wolfe.svg">
 
         <!-- Font Includes -->
@@ -24,7 +24,17 @@
 
         <!-- JavaScript -->
         <script src="script/navigation.js"></script>
-            
+        <script src="script/flickity.js"></script>  
+
+        <link rel="preload" as="script" href="script/navigation.js">
+        <link rel="preload" as="script" href="script/flickity.js">
+
+        <!-- Page Specific Stylesheets -->
+        
+        <link rel="stylesheet" href="style/flickity.css">
+        <link rel="stylesheet" href="style/carousel.css">
+        <link rel="stylesheet" href="style/pages/product.css">
+
     </head>
 
     <body>
@@ -38,8 +48,6 @@
                         <img src="assets/logo_wolfe.svg" alt="Wolfe" height="30px">
                     </a>
                 </div>
-                
-
                 <!--
                 <div class="btn-container">
                     <a class="nav-btn bg-white" href="store.html">STORE</a>
@@ -48,12 +56,11 @@
                     <a class="nav-btn end-btn bg-white" href="#">CART</a>
                 </div>
                 
-
-
                 <div class="ham-icon"">
                     <a href="javascript:void(0);" onclick="hamburger()">
                         <img src="assets/icon_ham.svg" height="30px">
                     </a>
+                -->
                 </div>
             </div>
 
@@ -61,62 +68,101 @@
                 <a class="ham-btn" href="store.html">STORE</a>
                 <a class="ham-btn" href="store.html">BLOG</a>
                 <a class="ham-btn" href="store.html">ABOUT</a>
-            -->
             </div>
+        
         </div>
 
         <!-- Main Content -->
         <div class="main">
             <div class="content">
 
-                <!-- Demo Card Container -->
-            
-                <div class="flex">
-                    <a class="card">
-                        <h2>ABOUT</h2>
-                        lots of words
-                    </a>
-                    </div>
                 
-                <div class="grid">
 
-                    <a class="box">
-                        <h2>CONTACT</h2>
-                        <p>Enter your email address and we'll connect you with the right person.</p>
-                        
-                        
-                            <label for="fname"></label>
-                            <input type="text" id="fname" name="fname" value="Email">
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                            <input type="submit" value="Submit">
-                         
-                      
+
+                <!-- Demo Card Container -->
+                <h1>WHO ARE WE?</h1>
+                <div class="flex bg-grey">
+                    <a class="card">
+                        <h2>WOLFE MOTORSPORT LTD</h2>
+                        At Wolfe Motorsport, we are passionate about performance and precision. Based in the heart of New Zealand, we specialize in designing and manufacturing high-quality fuel rails for motorsport enthusiasts and professionals. With a commitment to excellence, our fuel rails are engineered to provide reliable fuel delivery, helping to maximize your engine's performance under the most demanding conditions.
                     </a>
-                    <a class="box">
-                        <h2>CONTACT</h2>
-                        <p>Enter your email address and we'll connect you with the right person.</p>
+                         <!-- Carousel -->
+                
+                         <div class="prod-car car-card" style="grid-column-end: span 2;">
+                            <div class="carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+                                <div class="carousel-cell">
+                                    <div style="background-image: url(assets/coffee.jpeg);">
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div style="background-image: url(assets/venue.jpeg);">
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div style="background-image: url(assets/coffee.jpeg);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
-                        <label for="fname"></label>
-                            <input type="text" id="fname" name="fname" placeholder="Full name">
-                        <label for="email"></label>
-                            <input type="text" id="email" name="email" placeholder="Email">
-                            <label for="subject"></label>
-                            <input type="textarea" id="email" name="email" placeholder="Email">
-
-
-                        
-
-                    </a>
                     
+                    <a class="card">
+                        <h2>FUTURE PROJECTS</h2>
+                        In addition to our fuel rails, we plan offer a comprehensive injector service that flow tests injectors throughout their duty cycle, meaning you will know how much your injectors are flowing through out the whole rev range. Our state-of-the-art equipment ensures that each injector is optimised for perfect fuel atomisation, helping to achieve better engine efficiency and power. Whether you’re looking to upgrade your race car or build a high-performance street car.
+                    </a>
+                
+                    <div class="grid">
+
+                        <a class="card">
+                            <h2>STAYING IN TOUCH</h2>
+                            <p>The best way to keep up with what we are doing is by following us on our social media.</p>
+                            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+                                <!-- First image and text -->
+                                <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
+                                    <img class="social-image" src="assets/instagram_black.svg" alt="instagram">
+                                    <span style="margin-left: 10px; max-width: 250px;">Follow us on Instagram</span>
+                                </div>
+                            
+                                <!-- Second image and text -->
+                                <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
+                                    <img class="social-image" src="assets/youtube_black.svg" alt="youtube">
+                                    <span style="margin-left: 10px; max-width: 250px;">Subscribe to our YouTube channel</span>
+                                </div>
+                            
+                                <!-- Third image and text -->
+                                <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
+                                    <img class="social-image" src="assets/facebook_black.svg" alt="facebook">
+                                    <span style="margin-left: 10px; max-width: 250px;">Like us on Facebook</span>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="card">
+                            <h2>CONTACT</h2>
+                            <p>For all Technical, Sales or Partnership inquiries.</p>
+                            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+                                <!-- First image and text -->
+                                <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
+                                    <img class="social-image" src="assets/email.svg" alt="instagram">
+                                    <span style="margin-left: 10px; max-width: 250px;">admin@wolfemotorsport.co.nz</span>
+                                </div>
+                            
+                                <!-- Second image and text -->
+                                <div class="image-text-container" style="display: flex; flex-wrap: wrap; align-items: center;">
+                                    <img class="social-image" src="assets/phone.svg" alt="youtube">
+                                    <span style="margin-left: 10px; max-width: 250px;">(+64) 027 374 1036</span>
+                                </div>
+                            
+                            </div>
+                        </a>
+    
+                    </div>
                 </div>
-
-
             </div>
-
 
             <!-- Footer -->
             <div class="footer">
-                © Wolfe Motorsport 2024
+                © Wolfe Motorsport LTD 2023
             </div>
         </div>
 

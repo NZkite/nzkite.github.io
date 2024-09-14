@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="email.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.28375"
+     inkscape:cx="639.14314"
+     inkscape:cy="400"
+     inkscape:window-width="1390"
+     inkscape:window-height="1205"
+     inkscape:window-x="2240"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 24,12 C 24,18.62736 18.62736,24 12,24 5.37258,24 0,18.62736 0,12 0,5.37258 5.37258,0 12,0 18.62736,0 24,5.37258 24,12 Z M 6.006,8.4 C 6.006,7.74 6.54,7.2 7.2,7.2 h 9.6 c 0.66,0 1.2,0.54 1.2,1.2 v 7.2 c 0,0.66 -0.54,1.2 -1.2,1.2 H 7.2 C 6.54,16.8 6,16.26 6,15.6 Z M 12,12.6 7.200012,9.599964 V 15.6 H 16.8 V 9.599964 Z M 12,11.4 7.200012,8.400012 H 16.8 Z"
+     fill="#000000"
+     id="path2"
+     style="stroke-width:1.2" />
+</svg>

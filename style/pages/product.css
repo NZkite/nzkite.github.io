@@ -1,0 +1,55 @@
+.prod-car {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+.prod-side {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    flex-direction: row;
+}
+
+.prod-info {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    min-width: 300px;
+}
+
+.prod-opts {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    min-width: 300px;
+}
+
+.prod-desc {
+    flex-basis: 400px;
+    flex-grow: 1;
+
+    min-width: 300px;
+}
+
+.prod-doc {
+    flex-basis: 400px;
+    flex-grow: 1;
+
+    min-width: 300px;
+}
+
+.prod-doc-item {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.prod-doc-item p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.prod-doc-item p:first-child {
+    flex-grow: 1;
+}

@@ -7,12 +7,19 @@
     flex-wrap: wrap;
 }
 
-/* GRID ELEMENTS */
-.grid {
+.flex-grid {
     display: flex;
-    flex-direction: row;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* GRID ELEMENTS */
+.grid {
+    display: grid;
+    gap: 20px;
+
 }
 
 @media only screen and (min-width: 650px) {
